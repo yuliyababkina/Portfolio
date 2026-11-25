@@ -1,0 +1,1696 @@
+{
+  "schemaVersion": 1,
+  "library": "shadcn",
+  "inventorySource": {
+    "kind": "source-modules",
+    "directory": "src/components/ui"
+  },
+  "discovery": "Every src/components/ui/*.tsx module and its named exports, parsed with installed TypeScript",
+  "discovered": [
+    {
+      "file": "accordion.tsx",
+      "exports": [
+        "Accordion",
+        "AccordionContent",
+        "AccordionItem",
+        "AccordionTrigger"
+      ]
+    },
+    {
+      "file": "alert-dialog.tsx",
+      "exports": [
+        "AlertDialog",
+        "AlertDialogAction",
+        "AlertDialogCancel",
+        "AlertDialogContent",
+        "AlertDialogDescription",
+        "AlertDialogFooter",
+        "AlertDialogHeader",
+        "AlertDialogMedia",
+        "AlertDialogOverlay",
+        "AlertDialogPortal",
+        "AlertDialogTitle",
+        "AlertDialogTrigger"
+      ]
+    },
+    {
+      "file": "alert.tsx",
+      "exports": [
+        "Alert",
+        "AlertAction",
+        "AlertDescription",
+        "AlertTitle"
+      ]
+    },
+    {
+      "file": "aspect-ratio.tsx",
+      "exports": [
+        "AspectRatio"
+      ]
+    },
+    {
+      "file": "attachment.tsx",
+      "exports": [
+        "Attachment",
+        "AttachmentAction",
+        "AttachmentActions",
+        "AttachmentContent",
+        "AttachmentDescription",
+        "AttachmentGroup",
+        "AttachmentMedia",
+        "AttachmentTitle",
+        "AttachmentTrigger"
+      ]
+    },
+    {
+      "file": "avatar.tsx",
+      "exports": [
+        "Avatar",
+        "AvatarBadge",
+        "AvatarFallback",
+        "AvatarGroup",
+        "AvatarGroupCount",
+        "AvatarImage"
+      ]
+    },
+    {
+      "file": "badge.tsx",
+      "exports": [
+        "Badge",
+        "badgeVariants"
+      ]
+    },
+    {
+      "file": "breadcrumb.tsx",
+      "exports": [
+        "Breadcrumb",
+        "BreadcrumbEllipsis",
+        "BreadcrumbItem",
+        "BreadcrumbLink",
+        "BreadcrumbList",
+        "BreadcrumbPage",
+        "BreadcrumbSeparator"
+      ]
+    },
+    {
+      "file": "bubble.tsx",
+      "exports": [
+        "Bubble",
+        "BubbleContent",
+        "BubbleGroup",
+        "BubbleReactions"
+      ]
+    },
+    {
+      "file": "button-group.tsx",
+      "exports": [
+        "ButtonGroup",
+        "ButtonGroupSeparator",
+        "ButtonGroupText",
+        "buttonGroupVariants"
+      ]
+    },
+    {
+      "file": "button.tsx",
+      "exports": [
+        "Button",
+        "buttonVariants"
+      ]
+    },
+    {
+      "file": "calendar.tsx",
+      "exports": [
+        "Calendar",
+        "CalendarDayButton"
+      ]
+    },
+    {
+      "file": "card.tsx",
+      "exports": [
+        "Card",
+        "CardAction",
+        "CardContent",
+        "CardDescription",
+        "CardFooter",
+        "CardHeader",
+        "CardTitle"
+      ]
+    },
+    {
+      "file": "carousel.tsx",
+      "exports": [
+        "Carousel",
+        "CarouselApi",
+        "CarouselContent",
+        "CarouselItem",
+        "CarouselNext",
+        "CarouselPrevious",
+        "useCarousel"
+      ]
+    },
+    {
+      "file": "chart.tsx",
+      "exports": [
+        "ChartConfig",
+        "ChartContainer",
+        "ChartLegend",
+        "ChartLegendContent",
+        "ChartStyle",
+        "ChartTooltip",
+        "ChartTooltipContent"
+      ]
+    },
+    {
+      "file": "checkbox.tsx",
+      "exports": [
+        "Checkbox"
+      ]
+    },
+    {
+      "file": "code-block.tsx",
+      "exports": [
+        "CodeBlock",
+        "CodeBlockActions",
+        "CodeBlockContent",
+        "CodeBlockCopyButton",
+        "CodeBlockFooter",
+        "CodeBlockHeader",
+        "CodeBlockLine",
+        "CodeBlockTitle"
+      ]
+    },
+    {
+      "file": "collapsible.tsx",
+      "exports": [
+        "Collapsible",
+        "CollapsibleContent",
+        "CollapsibleTrigger"
+      ]
+    },
+    {
+      "file": "combobox.tsx",
+      "exports": [
+        "Combobox",
+        "ComboboxChip",
+        "ComboboxChips",
+        "ComboboxChipsInput",
+        "ComboboxCollection",
+        "ComboboxContent",
+        "ComboboxEmpty",
+        "ComboboxGroup",
+        "ComboboxInput",
+        "ComboboxItem",
+        "ComboboxLabel",
+        "ComboboxList",
+        "ComboboxSeparator",
+        "ComboboxTrigger",
+        "ComboboxValue",
+        "useComboboxAnchor"
+      ]
+    },
+    {
+      "file": "command.tsx",
+      "exports": [
+        "Command",
+        "CommandDialog",
+        "CommandEmpty",
+        "CommandGroup",
+        "CommandInput",
+        "CommandItem",
+        "CommandList",
+        "CommandSeparator",
+        "CommandShortcut"
+      ]
+    },
+    {
+      "file": "context-menu.tsx",
+      "exports": [
+        "ContextMenu",
+        "ContextMenuCheckboxItem",
+        "ContextMenuContent",
+        "ContextMenuGroup",
+        "ContextMenuItem",
+        "ContextMenuLabel",
+        "ContextMenuPortal",
+        "ContextMenuRadioGroup",
+        "ContextMenuRadioItem",
+        "ContextMenuSeparator",
+        "ContextMenuShortcut",
+        "ContextMenuSub",
+        "ContextMenuSubContent",
+        "ContextMenuSubTrigger",
+        "ContextMenuTrigger"
+      ]
+    },
+    {
+      "file": "dialog.tsx",
+      "exports": [
+        "Dialog",
+        "DialogClose",
+        "DialogContent",
+        "DialogDescription",
+        "DialogFooter",
+        "DialogHeader",
+        "DialogOverlay",
+        "DialogPortal",
+        "DialogTitle",
+        "DialogTrigger"
+      ]
+    },
+    {
+      "file": "direction.tsx",
+      "exports": [
+        "DirectionProvider",
+        "useDirection"
+      ]
+    },
+    {
+      "file": "drawer.tsx",
+      "exports": [
+        "Drawer",
+        "DrawerClose",
+        "DrawerContent",
+        "DrawerDescription",
+        "DrawerFooter",
+        "DrawerHeader",
+        "DrawerOverlay",
+        "DrawerPortal",
+        "DrawerTitle",
+        "DrawerTrigger"
+      ]
+    },
+    {
+      "file": "dropdown-menu.tsx",
+      "exports": [
+        "DropdownMenu",
+        "DropdownMenuCheckboxItem",
+        "DropdownMenuContent",
+        "DropdownMenuGroup",
+        "DropdownMenuItem",
+        "DropdownMenuLabel",
+        "DropdownMenuPortal",
+        "DropdownMenuRadioGroup",
+        "DropdownMenuRadioItem",
+        "DropdownMenuSeparator",
+        "DropdownMenuShortcut",
+        "DropdownMenuSub",
+        "DropdownMenuSubContent",
+        "DropdownMenuSubTrigger",
+        "DropdownMenuTrigger"
+      ]
+    },
+    {
+      "file": "empty.tsx",
+      "exports": [
+        "Empty",
+        "EmptyContent",
+        "EmptyDescription",
+        "EmptyHeader",
+        "EmptyMedia",
+        "EmptyTitle"
+      ]
+    },
+    {
+      "file": "field.tsx",
+      "exports": [
+        "Field",
+        "FieldContent",
+        "FieldDescription",
+        "FieldError",
+        "FieldGroup",
+        "FieldLabel",
+        "FieldLegend",
+        "FieldSeparator",
+        "FieldSet",
+        "FieldTitle"
+      ]
+    },
+    {
+      "file": "hover-card.tsx",
+      "exports": [
+        "HoverCard",
+        "HoverCardContent",
+        "HoverCardTrigger"
+      ]
+    },
+    {
+      "file": "input-group.tsx",
+      "exports": [
+        "InputGroup",
+        "InputGroupAddon",
+        "InputGroupButton",
+        "InputGroupInput",
+        "InputGroupText",
+        "InputGroupTextarea"
+      ]
+    },
+    {
+      "file": "input-otp.tsx",
+      "exports": [
+        "InputOTP",
+        "InputOTPGroup",
+        "InputOTPSeparator",
+        "InputOTPSlot"
+      ]
+    },
+    {
+      "file": "input.tsx",
+      "exports": [
+        "Input"
+      ]
+    },
+    {
+      "file": "item.tsx",
+      "exports": [
+        "Item",
+        "ItemActions",
+        "ItemContent",
+        "ItemDescription",
+        "ItemFooter",
+        "ItemGroup",
+        "ItemHeader",
+        "ItemMedia",
+        "ItemSeparator",
+        "ItemTitle"
+      ]
+    },
+    {
+      "file": "kbd.tsx",
+      "exports": [
+        "Kbd",
+        "KbdGroup"
+      ]
+    },
+    {
+      "file": "label.tsx",
+      "exports": [
+        "Label"
+      ]
+    },
+    {
+      "file": "marker.tsx",
+      "exports": [
+        "Marker",
+        "MarkerContent",
+        "MarkerIcon",
+        "markerVariants"
+      ]
+    },
+    {
+      "file": "menubar.tsx",
+      "exports": [
+        "Menubar",
+        "MenubarCheckboxItem",
+        "MenubarContent",
+        "MenubarGroup",
+        "MenubarItem",
+        "MenubarLabel",
+        "MenubarMenu",
+        "MenubarPortal",
+        "MenubarRadioGroup",
+        "MenubarRadioItem",
+        "MenubarSeparator",
+        "MenubarShortcut",
+        "MenubarSub",
+        "MenubarSubContent",
+        "MenubarSubTrigger",
+        "MenubarTrigger"
+      ]
+    },
+    {
+      "file": "message-scroller.tsx",
+      "exports": [
+        "MessageScroller",
+        "MessageScrollerButton",
+        "MessageScrollerContent",
+        "MessageScrollerItem",
+        "MessageScrollerProvider",
+        "MessageScrollerViewport",
+        "useMessageScroller",
+        "useMessageScrollerScrollable",
+        "useMessageScrollerVisibility"
+      ]
+    },
+    {
+      "file": "message.tsx",
+      "exports": [
+        "Message",
+        "MessageAvatar",
+        "MessageContent",
+        "MessageFooter",
+        "MessageGroup",
+        "MessageHeader"
+      ]
+    },
+    {
+      "file": "native-select.tsx",
+      "exports": [
+        "NativeSelect",
+        "NativeSelectOptGroup",
+        "NativeSelectOption"
+      ]
+    },
+    {
+      "file": "navigation-menu.tsx",
+      "exports": [
+        "NavigationMenu",
+        "NavigationMenuContent",
+        "NavigationMenuIndicator",
+        "NavigationMenuItem",
+        "NavigationMenuLink",
+        "NavigationMenuList",
+        "NavigationMenuTrigger",
+        "NavigationMenuViewport",
+        "navigationMenuTriggerStyle"
+      ]
+    },
+    {
+      "file": "pagination.tsx",
+      "exports": [
+        "Pagination",
+        "PaginationContent",
+        "PaginationEllipsis",
+        "PaginationItem",
+        "PaginationLink",
+        "PaginationNext",
+        "PaginationPrevious"
+      ]
+    },
+    {
+      "file": "popover.tsx",
+      "exports": [
+        "Popover",
+        "PopoverAnchor",
+        "PopoverContent",
+        "PopoverDescription",
+        "PopoverHeader",
+        "PopoverTitle",
+        "PopoverTrigger"
+      ]
+    },
+    {
+      "file": "progress.tsx",
+      "exports": [
+        "Progress"
+      ]
+    },
+    {
+      "file": "questionnaire.tsx",
+      "exports": [
+        "Questionnaire",
+        "QuestionnaireActions",
+        "QuestionnaireChoice",
+        "QuestionnaireChoiceDescription",
+        "QuestionnaireChoices",
+        "QuestionnaireDescription",
+        "QuestionnaireError",
+        "QuestionnaireInput",
+        "QuestionnaireItem",
+        "QuestionnaireNext",
+        "QuestionnairePrevious",
+        "QuestionnaireProgress",
+        "QuestionnaireSkip",
+        "QuestionnaireSubmit",
+        "QuestionnaireTitle"
+      ]
+    },
+    {
+      "file": "radio-group.tsx",
+      "exports": [
+        "RadioGroup",
+        "RadioGroupItem"
+      ]
+    },
+    {
+      "file": "resizable.tsx",
+      "exports": [
+        "ResizableHandle",
+        "ResizablePanel",
+        "ResizablePanelGroup"
+      ]
+    },
+    {
+      "file": "scroll-area.tsx",
+      "exports": [
+        "ScrollArea",
+        "ScrollBar"
+      ]
+    },
+    {
+      "file": "select.tsx",
+      "exports": [
+        "Select",
+        "SelectContent",
+        "SelectGroup",
+        "SelectItem",
+        "SelectLabel",
+        "SelectScrollDownButton",
+        "SelectScrollUpButton",
+        "SelectSeparator",
+        "SelectTrigger",
+        "SelectValue"
+      ]
+    },
+    {
+      "file": "separator.tsx",
+      "exports": [
+        "Separator"
+      ]
+    },
+    {
+      "file": "sheet.tsx",
+      "exports": [
+        "Sheet",
+        "SheetClose",
+        "SheetContent",
+        "SheetDescription",
+        "SheetFooter",
+        "SheetHeader",
+        "SheetTitle",
+        "SheetTrigger"
+      ]
+    },
+    {
+      "file": "sidebar.tsx",
+      "exports": [
+        "Sidebar",
+        "SidebarContent",
+        "SidebarFooter",
+        "SidebarGroup",
+        "SidebarGroupAction",
+        "SidebarGroupContent",
+        "SidebarGroupLabel",
+        "SidebarHeader",
+        "SidebarInput",
+        "SidebarInset",
+        "SidebarMenu",
+        "SidebarMenuAction",
+        "SidebarMenuBadge",
+        "SidebarMenuButton",
+        "SidebarMenuItem",
+        "SidebarMenuSkeleton",
+        "SidebarMenuSub",
+        "SidebarMenuSubButton",
+        "SidebarMenuSubItem",
+        "SidebarProvider",
+        "SidebarRail",
+        "SidebarSeparator",
+        "SidebarTrigger",
+        "useSidebar"
+      ]
+    },
+    {
+      "file": "skeleton.tsx",
+      "exports": [
+        "Skeleton"
+      ]
+    },
+    {
+      "file": "slider.tsx",
+      "exports": [
+        "Slider"
+      ]
+    },
+    {
+      "file": "sonner.tsx",
+      "exports": [
+        "Toaster"
+      ]
+    },
+    {
+      "file": "spinner.tsx",
+      "exports": [
+        "Spinner"
+      ]
+    },
+    {
+      "file": "switch.tsx",
+      "exports": [
+        "Switch"
+      ]
+    },
+    {
+      "file": "table.tsx",
+      "exports": [
+        "Table",
+        "TableBody",
+        "TableCaption",
+        "TableCell",
+        "TableFooter",
+        "TableHead",
+        "TableHeader",
+        "TableRow"
+      ]
+    },
+    {
+      "file": "tabs.tsx",
+      "exports": [
+        "Tabs",
+        "TabsContent",
+        "TabsList",
+        "TabsTrigger",
+        "tabsListVariants"
+      ]
+    },
+    {
+      "file": "textarea.tsx",
+      "exports": [
+        "Textarea"
+      ]
+    },
+    {
+      "file": "toggle-group.tsx",
+      "exports": [
+        "ToggleGroup",
+        "ToggleGroupItem"
+      ]
+    },
+    {
+      "file": "toggle.tsx",
+      "exports": [
+        "Toggle",
+        "toggleVariants"
+      ]
+    },
+    {
+      "file": "tooltip.tsx",
+      "exports": [
+        "Tooltip",
+        "TooltipContent",
+        "TooltipProvider",
+        "TooltipTrigger"
+      ]
+    },
+    {
+      "file": "trace.tsx",
+      "exports": [
+        "Trace",
+        "TraceCollapsible",
+        "TraceCollapsibleContent",
+        "TraceCollapsibleTrigger",
+        "TraceDescription",
+        "TraceIcon",
+        "TraceLine",
+        "TraceTitle"
+      ]
+    }
+  ],
+  "excluded": [
+    {
+      "item": "badge.tsx:badgeVariants",
+      "reason": "Class-variance function returning class names; variants are demonstrated through the owning visual component."
+    },
+    {
+      "item": "button-group.tsx:buttonGroupVariants",
+      "reason": "Class-variance function returning class names; variants are demonstrated through the owning visual component."
+    },
+    {
+      "item": "button.tsx:buttonVariants",
+      "reason": "Class-variance function returning class names; variants are demonstrated through the owning visual component."
+    },
+    {
+      "item": "carousel.tsx:CarouselApi",
+      "reason": "TypeScript-only declaration erased at runtime; not a rendered component."
+    },
+    {
+      "item": "carousel.tsx:useCarousel",
+      "reason": "Hook returning context, state or an anchor; has no standalone visual output. The owning UI module has a catalog composition."
+    },
+    {
+      "item": "chart.tsx:ChartConfig",
+      "reason": "TypeScript-only declaration erased at runtime; not a rendered component."
+    },
+    {
+      "item": "chart.tsx:ChartStyle",
+      "reason": "CSS-variable injector owned by ChartContainer; produces no visual content independently."
+    },
+    {
+      "item": "combobox.tsx:useComboboxAnchor",
+      "reason": "Hook returning context, state or an anchor; has no standalone visual output. The owning UI module has a catalog composition."
+    },
+    {
+      "item": "direction.tsx:useDirection",
+      "reason": "Hook returning context, state or an anchor; has no standalone visual output. The owning UI module has a catalog composition."
+    },
+    {
+      "item": "marker.tsx:markerVariants",
+      "reason": "Class-variance function returning class names; variants are demonstrated through the owning visual component."
+    },
+    {
+      "item": "message-scroller.tsx:useMessageScroller",
+      "reason": "Hook returning context, state or an anchor; has no standalone visual output. The owning UI module has a catalog composition."
+    },
+    {
+      "item": "message-scroller.tsx:useMessageScrollerScrollable",
+      "reason": "Hook returning context, state or an anchor; has no standalone visual output. The owning UI module has a catalog composition."
+    },
+    {
+      "item": "message-scroller.tsx:useMessageScrollerVisibility",
+      "reason": "Hook returning context, state or an anchor; has no standalone visual output. The owning UI module has a catalog composition."
+    },
+    {
+      "item": "sidebar.tsx:useSidebar",
+      "reason": "Hook returning context, state or an anchor; has no standalone visual output. The owning UI module has a catalog composition."
+    },
+    {
+      "item": "tabs.tsx:tabsListVariants",
+      "reason": "Class-variance function returning class names; variants are demonstrated through the owning visual component."
+    },
+    {
+      "item": "toggle.tsx:toggleVariants",
+      "reason": "Class-variance function returning class names; variants are demonstrated through the owning visual component."
+    }
+  ],
+  "components": [
+    {
+      "name": "Accordion",
+      "category": "Components",
+      "source": "accordion.tsx",
+      "file": "src/stories/components/Components/Accordion.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-accordion--light",
+        "catalog-shadcn-accordion--dark"
+      ],
+      "states": [
+        "Expandable account information",
+        "Multiple and disabled"
+      ]
+    },
+    {
+      "name": "Alert",
+      "category": "Components",
+      "source": "alert.tsx",
+      "file": "src/stories/components/Components/Alert.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-alert--light",
+        "catalog-shadcn-alert--dark"
+      ],
+      "states": [
+        "Informational message",
+        "Error state"
+      ]
+    },
+    {
+      "name": "AlertDialog",
+      "category": "Components",
+      "source": "alert-dialog.tsx",
+      "file": "src/stories/components/Components/AlertDialog.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-alertdialog--light",
+        "catalog-shadcn-alertdialog--dark"
+      ],
+      "states": [
+        "Destructive confirmation",
+        "Unavailable action"
+      ]
+    },
+    {
+      "name": "AspectRatio",
+      "category": "Components",
+      "source": "aspect-ratio.tsx",
+      "file": "src/stories/components/Components/AspectRatio.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-aspectratio--light",
+        "catalog-shadcn-aspectratio--dark"
+      ],
+      "states": [
+        "Widescreen preview",
+        "Square preview"
+      ]
+    },
+    {
+      "name": "Attachment",
+      "category": "Components",
+      "source": "attachment.tsx",
+      "file": "src/stories/components/Components/Attachment.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-attachment--light",
+        "catalog-shadcn-attachment--dark"
+      ],
+      "states": [
+        "Completed and compact files",
+        "Progress error and idle"
+      ]
+    },
+    {
+      "name": "Avatar",
+      "category": "Components",
+      "source": "avatar.tsx",
+      "file": "src/stories/components/Components/Avatar.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-avatar--light",
+        "catalog-shadcn-avatar--dark"
+      ],
+      "states": [
+        "Initials and image",
+        "Different sizes"
+      ]
+    },
+    {
+      "name": "Badge",
+      "category": "Components",
+      "source": "badge.tsx",
+      "file": "src/stories/components/Components/Badge.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-badge--light",
+        "catalog-shadcn-badge--dark"
+      ],
+      "states": [
+        "Semantic variants",
+        "With icon"
+      ]
+    },
+    {
+      "name": "Breadcrumb",
+      "category": "Components",
+      "source": "breadcrumb.tsx",
+      "file": "src/stories/components/Components/Breadcrumb.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-breadcrumb--light",
+        "catalog-shadcn-breadcrumb--dark"
+      ],
+      "states": [
+        "Navigation hierarchy",
+        "Collapsed levels"
+      ]
+    },
+    {
+      "name": "Bubble",
+      "category": "Components",
+      "source": "bubble.tsx",
+      "file": "src/stories/components/Components/Bubble.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-bubble--light",
+        "catalog-shadcn-bubble--dark"
+      ],
+      "states": [
+        "Message variants",
+        "Alignment and error"
+      ]
+    },
+    {
+      "name": "Button",
+      "category": "Components",
+      "source": "button.tsx",
+      "file": "src/stories/components/Components/Button.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-button--light",
+        "catalog-shadcn-button--dark"
+      ],
+      "states": [
+        "Variants",
+        "Sizes disabled icon and loading"
+      ]
+    },
+    {
+      "name": "ButtonGroup",
+      "category": "Components",
+      "source": "button-group.tsx",
+      "file": "src/stories/components/Components/ButtonGroup.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-buttongroup--light",
+        "catalog-shadcn-buttongroup--dark"
+      ],
+      "states": [
+        "Action group",
+        "Labelled and disabled group"
+      ]
+    },
+    {
+      "name": "Calendar",
+      "category": "Components",
+      "source": "calendar.tsx",
+      "file": "src/stories/components/Components/Calendar.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-calendar--light",
+        "catalog-shadcn-calendar--dark"
+      ],
+      "states": [
+        "Selected date",
+        "Range and disabled dates"
+      ]
+    },
+    {
+      "name": "Card",
+      "category": "Components",
+      "source": "card.tsx",
+      "file": "src/stories/components/Components/Card.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-card--light",
+        "catalog-shadcn-card--dark"
+      ],
+      "states": [
+        "Account summary",
+        "Compact empty card"
+      ]
+    },
+    {
+      "name": "Carousel",
+      "category": "Components",
+      "source": "carousel.tsx",
+      "file": "src/stories/components/Components/Carousel.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-carousel--light",
+        "catalog-shadcn-carousel--dark"
+      ],
+      "states": [
+        "Paged content",
+        "Multiple items"
+      ]
+    },
+    {
+      "name": "Chart",
+      "category": "Components",
+      "source": "chart.tsx",
+      "file": "src/stories/components/Components/Chart.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-chart--light",
+        "catalog-shadcn-chart--dark"
+      ],
+      "states": [
+        "Monthly invoices",
+        "Empty data"
+      ]
+    },
+    {
+      "name": "Checkbox",
+      "category": "Components",
+      "source": "checkbox.tsx",
+      "file": "src/stories/components/Components/Checkbox.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-checkbox--light",
+        "catalog-shadcn-checkbox--dark"
+      ],
+      "states": [
+        "Checked unchecked and disabled",
+        "Invalid state"
+      ],
+      "stateCheck": {
+        "on": {
+          "selector": "[data-slot=checkbox][aria-label=\"Email alerts\"]",
+          "state": "checked"
+        },
+        "off": {
+          "selector": "[data-slot=checkbox][aria-label=\"Weekly summary\"]",
+          "state": "unchecked"
+        }
+      }
+    },
+    {
+      "name": "CodeBlock",
+      "category": "Components",
+      "source": "code-block.tsx",
+      "file": "src/stories/components/Components/CodeBlock.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-codeblock--light",
+        "catalog-shadcn-codeblock--dark"
+      ],
+      "states": [
+        "Numbered source",
+        "Diff and error"
+      ]
+    },
+    {
+      "name": "Collapsible",
+      "category": "Components",
+      "source": "collapsible.tsx",
+      "file": "src/stories/components/Components/Collapsible.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-collapsible--light",
+        "catalog-shadcn-collapsible--dark"
+      ],
+      "states": [
+        "Expanded details",
+        "Disabled collapsed"
+      ]
+    },
+    {
+      "name": "Combobox",
+      "category": "Components",
+      "source": "combobox.tsx",
+      "file": "src/stories/components/Components/Combobox.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-combobox--light",
+        "catalog-shadcn-combobox--dark"
+      ],
+      "states": [
+        "Searchable office selection",
+        "Disabled selection"
+      ]
+    },
+    {
+      "name": "Command",
+      "category": "Components",
+      "source": "command.tsx",
+      "file": "src/stories/components/Components/Command.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-command--light",
+        "catalog-shadcn-command--dark"
+      ],
+      "states": [
+        "Search and grouped actions",
+        "Empty search guidance"
+      ]
+    },
+    {
+      "name": "ContextMenu",
+      "category": "Components",
+      "source": "context-menu.tsx",
+      "file": "src/stories/components/Components/ContextMenu.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-contextmenu--light",
+        "catalog-shadcn-contextmenu--dark"
+      ],
+      "states": [
+        "Contextual actions",
+        "Keyboard guidance"
+      ]
+    },
+    {
+      "name": "Dialog",
+      "category": "Components",
+      "source": "dialog.tsx",
+      "file": "src/stories/components/Components/Dialog.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-dialog--light",
+        "catalog-shadcn-dialog--dark"
+      ],
+      "states": [
+        "Customer dialog",
+        "Unavailable action"
+      ]
+    },
+    {
+      "name": "Direction",
+      "category": "Components",
+      "source": "direction.tsx",
+      "file": "src/stories/components/Components/Direction.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-direction--light",
+        "catalog-shadcn-direction--dark"
+      ],
+      "states": [
+        "Left to right",
+        "Right to left"
+      ]
+    },
+    {
+      "name": "Drawer",
+      "category": "Components",
+      "source": "drawer.tsx",
+      "file": "src/stories/components/Components/Drawer.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-drawer--light",
+        "catalog-shadcn-drawer--dark"
+      ],
+      "states": [
+        "Bottom drawer",
+        "Disabled entry"
+      ]
+    },
+    {
+      "name": "DropdownMenu",
+      "category": "Components",
+      "source": "dropdown-menu.tsx",
+      "file": "src/stories/components/Components/DropdownMenu.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-dropdownmenu--light",
+        "catalog-shadcn-dropdownmenu--dark"
+      ],
+      "states": [
+        "Account actions",
+        "Disabled trigger"
+      ]
+    },
+    {
+      "name": "Empty",
+      "category": "Components",
+      "source": "empty.tsx",
+      "file": "src/stories/components/Components/Empty.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-empty--light",
+        "catalog-shadcn-empty--dark"
+      ],
+      "states": [
+        "First use with action",
+        "Search has no matches"
+      ]
+    },
+    {
+      "name": "Field",
+      "category": "Components",
+      "source": "field.tsx",
+      "file": "src/stories/components/Components/Field.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-field--light",
+        "catalog-shadcn-field--dark"
+      ],
+      "states": [
+        "Label description and input",
+        "Invalid and disabled"
+      ]
+    },
+    {
+      "name": "HoverCard",
+      "category": "Components",
+      "source": "hover-card.tsx",
+      "file": "src/stories/components/Components/HoverCard.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-hovercard--light",
+        "catalog-shadcn-hovercard--dark"
+      ],
+      "states": [
+        "Person details",
+        "Link context"
+      ]
+    },
+    {
+      "name": "Input",
+      "category": "Components",
+      "source": "input.tsx",
+      "file": "src/stories/components/Components/Input.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-input--light",
+        "catalog-shadcn-input--dark"
+      ],
+      "states": [
+        "Default sizes and placeholders",
+        "Disabled and invalid"
+      ]
+    },
+    {
+      "name": "InputGroup",
+      "category": "Components",
+      "source": "input-group.tsx",
+      "file": "src/stories/components/Components/InputGroup.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-inputgroup--light",
+        "catalog-shadcn-inputgroup--dark"
+      ],
+      "states": [
+        "Prefix and action",
+        "Invalid and disabled"
+      ]
+    },
+    {
+      "name": "InputOtp",
+      "category": "Components",
+      "source": "input-otp.tsx",
+      "file": "src/stories/components/Components/InputOtp.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-inputotp--light",
+        "catalog-shadcn-inputotp--dark"
+      ],
+      "states": [
+        "Six digit verification",
+        "Disabled"
+      ]
+    },
+    {
+      "name": "Item",
+      "category": "Components",
+      "source": "item.tsx",
+      "file": "src/stories/components/Components/Item.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-item--light",
+        "catalog-shadcn-item--dark"
+      ],
+      "states": [
+        "Record with actions",
+        "Compact record group"
+      ]
+    },
+    {
+      "name": "Kbd",
+      "category": "Components",
+      "source": "kbd.tsx",
+      "file": "src/stories/components/Components/Kbd.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-kbd--light",
+        "catalog-shadcn-kbd--dark"
+      ],
+      "states": [
+        "Keyboard shortcut",
+        "Navigation keys"
+      ]
+    },
+    {
+      "name": "Label",
+      "category": "Components",
+      "source": "label.tsx",
+      "file": "src/stories/components/Components/Label.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-label--light",
+        "catalog-shadcn-label--dark"
+      ],
+      "states": [
+        "Labelled input",
+        "Disabled field label"
+      ]
+    },
+    {
+      "name": "Marker",
+      "category": "Components",
+      "source": "marker.tsx",
+      "file": "src/stories/components/Components/Marker.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-marker--light",
+        "catalog-shadcn-marker--dark"
+      ],
+      "states": [
+        "Divider and section marker",
+        "With icon"
+      ]
+    },
+    {
+      "name": "Menubar",
+      "category": "Components",
+      "source": "menubar.tsx",
+      "file": "src/stories/components/Components/Menubar.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-menubar--light",
+        "catalog-shadcn-menubar--dark"
+      ],
+      "states": [
+        "Application menus",
+        "Disabled option"
+      ]
+    },
+    {
+      "name": "Message",
+      "category": "Components",
+      "source": "message.tsx",
+      "file": "src/stories/components/Components/Message.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-message--light",
+        "catalog-shadcn-message--dark"
+      ],
+      "states": [
+        "Incoming message",
+        "Outgoing message"
+      ]
+    },
+    {
+      "name": "MessageScroller",
+      "category": "Components",
+      "source": "message-scroller.tsx",
+      "file": "src/stories/components/Components/MessageScroller.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-messagescroller--light",
+        "catalog-shadcn-messagescroller--dark"
+      ],
+      "states": [
+        "Scrollable conversation",
+        "Short conversation"
+      ]
+    },
+    {
+      "name": "NativeSelect",
+      "category": "Components",
+      "source": "native-select.tsx",
+      "file": "src/stories/components/Components/NativeSelect.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-nativeselect--light",
+        "catalog-shadcn-nativeselect--dark"
+      ],
+      "states": [
+        "Grouped native choices",
+        "Disabled and invalid"
+      ]
+    },
+    {
+      "name": "NavigationMenu",
+      "category": "Components",
+      "source": "navigation-menu.tsx",
+      "file": "src/stories/components/Components/NavigationMenu.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-navigationmenu--light",
+        "catalog-shadcn-navigationmenu--dark"
+      ],
+      "states": [
+        "Expandable navigation",
+        "Direct link"
+      ]
+    },
+    {
+      "name": "Pagination",
+      "category": "Components",
+      "source": "pagination.tsx",
+      "file": "src/stories/components/Components/Pagination.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-pagination--light",
+        "catalog-shadcn-pagination--dark"
+      ],
+      "states": [
+        "Active page and overflow",
+        "Single page"
+      ]
+    },
+    {
+      "name": "Popover",
+      "category": "Components",
+      "source": "popover.tsx",
+      "file": "src/stories/components/Components/Popover.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-popover--light",
+        "catalog-shadcn-popover--dark"
+      ],
+      "states": [
+        "Editable details",
+        "Disabled entry"
+      ]
+    },
+    {
+      "name": "Progress",
+      "category": "Components",
+      "source": "progress.tsx",
+      "file": "src/stories/components/Components/Progress.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-progress--light",
+        "catalog-shadcn-progress--dark"
+      ],
+      "states": [
+        "Progress values",
+        "Empty progress"
+      ]
+    },
+    {
+      "name": "Questionnaire",
+      "category": "Components",
+      "source": "questionnaire.tsx",
+      "file": "src/stories/components/Components/Questionnaire.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-questionnaire--light",
+        "catalog-shadcn-questionnaire--dark"
+      ],
+      "states": [
+        "Required choice and navigation",
+        "Disabled choice"
+      ]
+    },
+    {
+      "name": "RadioGroup",
+      "category": "Components",
+      "source": "radio-group.tsx",
+      "file": "src/stories/components/Components/RadioGroup.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-radiogroup--light",
+        "catalog-shadcn-radiogroup--dark"
+      ],
+      "states": [
+        "Selected and unselected",
+        "Disabled and invalid"
+      ],
+      "stateCheck": {
+        "on": {
+          "selector": "[data-slot=radio-group-item]#weekly",
+          "state": "checked"
+        },
+        "off": {
+          "selector": "[data-slot=radio-group-item]#daily",
+          "state": "unchecked"
+        }
+      }
+    },
+    {
+      "name": "Resizable",
+      "category": "Components",
+      "source": "resizable.tsx",
+      "file": "src/stories/components/Components/Resizable.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-resizable--light",
+        "catalog-shadcn-resizable--dark"
+      ],
+      "states": [
+        "Horizontal split",
+        "Vertical split"
+      ]
+    },
+    {
+      "name": "ScrollArea",
+      "category": "Components",
+      "source": "scroll-area.tsx",
+      "file": "src/stories/components/Components/ScrollArea.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-scrollarea--light",
+        "catalog-shadcn-scrollarea--dark"
+      ],
+      "states": [
+        "Vertical records",
+        "Horizontal content"
+      ]
+    },
+    {
+      "name": "Select",
+      "category": "Components",
+      "source": "select.tsx",
+      "file": "src/stories/components/Components/Select.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-select--light",
+        "catalog-shadcn-select--dark"
+      ],
+      "states": [
+        "Grouped choices",
+        "Disabled and invalid"
+      ]
+    },
+    {
+      "name": "Separator",
+      "category": "Components",
+      "source": "separator.tsx",
+      "file": "src/stories/components/Components/Separator.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-separator--light",
+        "catalog-shadcn-separator--dark"
+      ],
+      "states": [
+        "Horizontal sections",
+        "Vertical separators"
+      ]
+    },
+    {
+      "name": "Sheet",
+      "category": "Components",
+      "source": "sheet.tsx",
+      "file": "src/stories/components/Components/Sheet.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-sheet--light",
+        "catalog-shadcn-sheet--dark"
+      ],
+      "states": [
+        "Side panel",
+        "Unavailable entry"
+      ]
+    },
+    {
+      "name": "Sidebar",
+      "category": "Components",
+      "source": "sidebar.tsx",
+      "file": "src/stories/components/Components/Sidebar.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-sidebar--light",
+        "catalog-shadcn-sidebar--dark"
+      ],
+      "states": [
+        "Workspace navigation",
+        "Collapsed state"
+      ],
+      "visualTargets": [
+        "collapsed navigation icon"
+      ]
+    },
+    {
+      "name": "Skeleton",
+      "category": "Components",
+      "source": "skeleton.tsx",
+      "file": "src/stories/components/Components/Skeleton.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-skeleton--light",
+        "catalog-shadcn-skeleton--dark"
+      ],
+      "states": [
+        "Profile loading",
+        "Card loading"
+      ]
+    },
+    {
+      "name": "Slider",
+      "category": "Components",
+      "source": "slider.tsx",
+      "file": "src/stories/components/Components/Slider.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-slider--light",
+        "catalog-shadcn-slider--dark"
+      ],
+      "states": [
+        "Single and range",
+        "Disabled and small range"
+      ]
+    },
+    {
+      "name": "Sonner",
+      "category": "Components",
+      "source": "sonner.tsx",
+      "file": "src/stories/components/Components/Sonner.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-sonner--light",
+        "catalog-shadcn-sonner--dark"
+      ],
+      "states": [
+        "Success and error feedback",
+        "Information and loading"
+      ]
+    },
+    {
+      "name": "Spinner",
+      "category": "Components",
+      "source": "spinner.tsx",
+      "file": "src/stories/components/Components/Spinner.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-spinner--light",
+        "catalog-shadcn-spinner--dark"
+      ],
+      "states": [
+        "Default and sized",
+        "Loading action"
+      ]
+    },
+    {
+      "name": "Switch",
+      "category": "Components",
+      "source": "switch.tsx",
+      "file": "src/stories/components/Components/Switch.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-switch--light",
+        "catalog-shadcn-switch--dark"
+      ],
+      "states": [
+        "Checked and unchecked",
+        "Disabled and invalid"
+      ],
+      "stateCheck": {
+        "on": {
+          "selector": "[data-slot=switch][aria-label=\"Email alerts\"]",
+          "state": "checked"
+        },
+        "off": {
+          "selector": "[data-slot=switch][aria-label=\"Weekly digest\"]",
+          "state": "unchecked"
+        },
+        "parts": [
+          "[data-slot=switch-thumb]"
+        ]
+      }
+    },
+    {
+      "name": "Table",
+      "category": "Components",
+      "source": "table.tsx",
+      "file": "src/stories/components/Components/Table.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-table--light",
+        "catalog-shadcn-table--dark"
+      ],
+      "states": [
+        "Invoice records",
+        "Empty data"
+      ]
+    },
+    {
+      "name": "Tabs",
+      "category": "Components",
+      "source": "tabs.tsx",
+      "file": "src/stories/components/Components/Tabs.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-tabs--light",
+        "catalog-shadcn-tabs--dark"
+      ],
+      "states": [
+        "Account sections",
+        "Alternative default"
+      ],
+      "stateCheck": {
+        "on": {
+          "selector": "[data-slot=tabs-trigger]",
+          "text": "Details",
+          "state": "active"
+        },
+        "off": {
+          "selector": "[data-slot=tabs-trigger]",
+          "text": "History",
+          "state": "inactive"
+        }
+      }
+    },
+    {
+      "name": "Textarea",
+      "category": "Components",
+      "source": "textarea.tsx",
+      "file": "src/stories/components/Components/Textarea.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-textarea--light",
+        "catalog-shadcn-textarea--dark"
+      ],
+      "states": [
+        "Review notes",
+        "Disabled and invalid"
+      ]
+    },
+    {
+      "name": "Toggle",
+      "category": "Components",
+      "source": "toggle.tsx",
+      "file": "src/stories/components/Components/Toggle.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-toggle--light",
+        "catalog-shadcn-toggle--dark"
+      ],
+      "states": [
+        "Pressed and unpressed",
+        "Sizes outline and disabled"
+      ]
+    },
+    {
+      "name": "ToggleGroup",
+      "category": "Components",
+      "source": "toggle-group.tsx",
+      "file": "src/stories/components/Components/ToggleGroup.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-togglegroup--light",
+        "catalog-shadcn-togglegroup--dark"
+      ],
+      "states": [
+        "Single selection",
+        "Multiple selection"
+      ]
+    },
+    {
+      "name": "Tooltip",
+      "category": "Components",
+      "source": "tooltip.tsx",
+      "file": "src/stories/components/Components/Tooltip.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-tooltip--light",
+        "catalog-shadcn-tooltip--dark"
+      ],
+      "states": [
+        "Action hint",
+        "Placement"
+      ]
+    },
+    {
+      "name": "Trace",
+      "category": "Components",
+      "source": "trace.tsx",
+      "file": "src/stories/components/Components/Trace.stories.tsx",
+      "storyIds": [
+        "catalog-shadcn-trace--light",
+        "catalog-shadcn-trace--dark"
+      ],
+      "states": [
+        "Progress statuses",
+        "Expandable detail"
+      ]
+    }
+  ]
+}

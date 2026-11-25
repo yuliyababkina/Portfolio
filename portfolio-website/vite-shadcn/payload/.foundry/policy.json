@@ -1,0 +1,932 @@
+{
+  "schemaVersion": 1,
+  "packId": "vite-shadcn",
+  "approvalEvidence": "Inherited immutable reference shadcn policy; Denys Phase 5b request; decisions D7/P15 adds src/theme authored lint coverage, hook/lint-staged covers theme and shared/hooks. Base P1–P10/P16 already approved.",
+  "sourceSha256": "70cb8a1e3f9ee259d6019a82d50326087424c1a963b16ea0c949affd223b1c55",
+  "rules": [
+    {
+      "files": [
+        "src/components/ui/**/*.{ts,tsx}",
+        "src/hooks/**/*.{ts,tsx}",
+        "src/theme/**/*.{ts,tsx}"
+      ],
+      "rules": {
+        "react-refresh/only-export-components": "off",
+        "react-hooks/static-components": "off",
+        "react-hooks/use-memo": "off",
+        "react-hooks/void-use-memo": "off",
+        "react-hooks/preserve-manual-memoization": "off",
+        "react-hooks/incompatible-library": "off",
+        "react-hooks/immutability": "off",
+        "react-hooks/globals": "off",
+        "react-hooks/refs": "off",
+        "react-hooks/set-state-in-effect": "off",
+        "react-hooks/error-boundaries": "off",
+        "react-hooks/purity": "off",
+        "react-hooks/set-state-in-render": "off",
+        "react-hooks/unsupported-syntax": "off",
+        "react-hooks/config": "off",
+        "react-hooks/gating": "off"
+      }
+    },
+    {
+      "files": [
+        "src/components/ui/**/*.{ts,tsx}",
+        "src/hooks/**/*.{ts,tsx}",
+        "src/flows/**/*.{ts,tsx}",
+        "src/shared/ui/**/*.{ts,tsx}",
+        "src/shared/hooks/**/*.{ts,tsx}",
+        "src/features/*/ui/**/*.{ts,tsx}",
+        "src/stories/**/*.{ts,tsx}",
+        "src/theme/**/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              }
+            ]
+          }
+        ],
+        "no-restricted-globals": [
+          "error",
+          {
+            "name": "fetch",
+            "message": "No fetch() in presentation. Data arrives as props."
+          },
+          {
+            "name": "XMLHttpRequest",
+            "message": "No network calls in presentation."
+          }
+        ],
+        "no-restricted-syntax": [
+          "error",
+          {
+            "selector": "Literal[value=/-\\[(?:#|rgb\\(|rgba\\(|hsl\\(|hsla\\(|oklch\\(|oklab\\(|color-mix\\()/]",
+            "message": "No arbitrary colour values. Use a semantic token: bg-primary, text-muted-foreground, border-input."
+          },
+          {
+            "selector": "TemplateElement[value.raw=/-\\[(?:#|rgb\\(|rgba\\(|hsl\\(|hsla\\(|oklch\\(|oklab\\(|color-mix\\()/]",
+            "message": "No arbitrary colour values. Use a semantic token: bg-primary, text-muted-foreground, border-input."
+          },
+          {
+            "selector": "Literal[value=/\\b(?:bg|text|border|ring|fill|stroke|shadow|from|via|to|divide|outline|decoration|accent|caret|placeholder)-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-\\d{2,3}\\b/]",
+            "message": "No raw palette utilities (bg-blue-500). Use a semantic token, or add one to src/theme/theme.css."
+          },
+          {
+            "selector": "TemplateElement[value.raw=/\\b(?:bg|text|border|ring|fill|stroke|shadow|from|via|to|divide|outline|decoration|accent|caret|placeholder)-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-\\d{2,3}\\b/]",
+            "message": "No raw palette utilities (bg-blue-500). Use a semantic token, or add one to src/theme/theme.css."
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              },
+              {
+                "group": [
+                  "@/flows/**"
+                ],
+                "message": "Inside /flows use relative imports for your own flow. Reaching another flow by alias is still a cross-flow import."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              },
+              {
+                "group": [
+                  "../*/**",
+                  "!../_*/**"
+                ],
+                "message": "No cross-flow imports. Each flow owns its screens. Shared UI goes in src/shared/ui; shared mock data goes in src/flows/_mocks."
+              },
+              {
+                "group": [
+                  "@/flows/**"
+                ],
+                "message": "Inside /flows use relative imports for your own flow. Reaching another flow by alias is still a cross-flow import."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*/*/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              },
+              {
+                "group": [
+                  "../../*/**",
+                  "!../../_*/**"
+                ],
+                "message": "No cross-flow imports. Each flow owns its screens. Shared UI goes in src/shared/ui; shared mock data goes in src/flows/_mocks."
+              },
+              {
+                "group": [
+                  "@/flows/**"
+                ],
+                "message": "Inside /flows use relative imports for your own flow. Reaching another flow by alias is still a cross-flow import."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*/*/*/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              },
+              {
+                "group": [
+                  "../../../*/**",
+                  "!../../../_*/**"
+                ],
+                "message": "No cross-flow imports. Each flow owns its screens. Shared UI goes in src/shared/ui; shared mock data goes in src/flows/_mocks."
+              },
+              {
+                "group": [
+                  "@/flows/**"
+                ],
+                "message": "Inside /flows use relative imports for your own flow. Reaching another flow by alias is still a cross-flow import."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*/*/*/*/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              },
+              {
+                "group": [
+                  "../../../../*/**",
+                  "!../../../../_*/**"
+                ],
+                "message": "No cross-flow imports. Each flow owns its screens. Shared UI goes in src/shared/ui; shared mock data goes in src/flows/_mocks."
+              },
+              {
+                "group": [
+                  "@/flows/**"
+                ],
+                "message": "Inside /flows use relative imports for your own flow. Reaching another flow by alias is still a cross-flow import."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*/*/*/*/*/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              },
+              {
+                "group": [
+                  "../../../../../*/**",
+                  "!../../../../../_*/**"
+                ],
+                "message": "No cross-flow imports. Each flow owns its screens. Shared UI goes in src/shared/ui; shared mock data goes in src/flows/_mocks."
+              },
+              {
+                "group": [
+                  "@/flows/**"
+                ],
+                "message": "Inside /flows use relative imports for your own flow. Reaching another flow by alias is still a cross-flow import."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*/*/*/*/*/*/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "paths": [
+              {
+                "name": "axios",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "swr",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "ky",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "graphql-request",
+                "message": "No data fetching in presentation. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-query",
+                "message": "Query hooks are Integration Mode. Take data via props."
+              },
+              {
+                "name": "zustand",
+                "message": "Global state is Integration Mode. Take data via props."
+              },
+              {
+                "name": "@tanstack/react-router",
+                "importNames": [
+                  "redirect",
+                  "useRouter",
+                  "useRouterState",
+                  "useLoaderData",
+                  "useSearch",
+                  "createRoute",
+                  "createRootRoute",
+                  "createRouter",
+                  "redirectDocument"
+                ],
+                "message": "Navigation only: Link / useNavigate / useParams. Routing logic lives in /app."
+              }
+            ],
+            "patterns": [
+              {
+                "group": [
+                  "**/app",
+                  "**/app/**"
+                ],
+                "message": "UI cannot import from /app. The router instance and providers are dev-owned."
+              },
+              {
+                "group": [
+                  "**/api",
+                  "**/api/**",
+                  "**/store",
+                  "**/store/**",
+                  "**/stores/**",
+                  "**/controllers",
+                  "**/controllers/**",
+                  "**/models",
+                  "**/models/**",
+                  "**/services",
+                  "**/services/**"
+                ],
+                "message": "UI cannot import from the smart layer (api / store / controllers / models)."
+              },
+              {
+                "group": [
+                  "../../../../../../*/**",
+                  "!../../../../../../_*/**"
+                ],
+                "message": "No cross-flow imports. Each flow owns its screens. Shared UI goes in src/shared/ui; shared mock data goes in src/flows/_mocks."
+              },
+              {
+                "group": [
+                  "@/flows/**"
+                ],
+                "message": "Inside /flows use relative imports for your own flow. Reaching another flow by alias is still a cross-flow import."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/*/*/*/*/*/*/*/**/*.{ts,tsx}"
+      ],
+      "rules": {
+        "no-restricted-imports": [
+          "error",
+          {
+            "patterns": [
+              {
+                "group": [
+                  "**"
+                ],
+                "message": "Flow folders nest at most 6 levels deep. Flatten this folder — past that depth the cross-flow ban cannot be checked."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "files": [
+        "src/flows/**/*.{ts,tsx}",
+        "src/shared/ui/**/*.{ts,tsx}",
+        "src/shared/hooks/**/*.{ts,tsx}",
+        "src/features/*/ui/**/*.{ts,tsx}",
+        "src/stories/**/*.{ts,tsx}",
+        "src/theme/**/*.{ts,tsx}"
+      ],
+      "linterOptions": {
+        "noInlineConfig": true
+      },
+      "settings": {
+        "react": {
+          "version": "detect"
+        }
+      },
+      "rules": {
+        "react/forbid-elements": [
+          "error",
+          {
+            "forbid": [
+              {
+                "element": "button",
+                "message": "Use <Button>. It carries the variant, size and focus-ring tokens."
+              },
+              {
+                "element": "input",
+                "message": "Use <Input> / <Checkbox> / <Switch> / <RadioGroup> / <Slider> / <InputOTP>."
+              },
+              {
+                "element": "textarea",
+                "message": "Use <Textarea>."
+              },
+              {
+                "element": "select",
+                "message": "Use <Select>, or <NativeSelect> when you want the OS control."
+              },
+              {
+                "element": "label",
+                "message": "Use <Label>, or <Field> for a labelled control."
+              },
+              {
+                "element": "table",
+                "message": "Use <Table>. (Prose tables inside .typeset are the exception — see AGENTS.md §3.)"
+              },
+              {
+                "element": "thead",
+                "message": "Use <TableHeader>."
+              },
+              {
+                "element": "tbody",
+                "message": "Use <TableBody>."
+              },
+              {
+                "element": "tfoot",
+                "message": "Use <TableFooter>."
+              },
+              {
+                "element": "tr",
+                "message": "Use <TableRow>."
+              },
+              {
+                "element": "td",
+                "message": "Use <TableCell>."
+              },
+              {
+                "element": "th",
+                "message": "Use <TableHead>."
+              },
+              {
+                "element": "hr",
+                "message": "Use <Separator>."
+              },
+              {
+                "element": "dialog",
+                "message": "Use <Dialog> / <AlertDialog> / <Sheet> / <Drawer>."
+              },
+              {
+                "element": "progress",
+                "message": "Use <Progress>."
+              },
+              {
+                "element": "kbd",
+                "message": "Use <Kbd>."
+              }
+            ]
+          }
+        ],
+        "no-restricted-syntax": [
+          "error",
+          {
+            "selector": "Literal[value=/-\\[(?:#|rgb\\(|rgba\\(|hsl\\(|hsla\\(|oklch\\(|oklab\\(|color-mix\\()/]",
+            "message": "No arbitrary colour values. Use a semantic token: bg-primary, text-muted-foreground, border-input."
+          },
+          {
+            "selector": "TemplateElement[value.raw=/-\\[(?:#|rgb\\(|rgba\\(|hsl\\(|hsla\\(|oklch\\(|oklab\\(|color-mix\\()/]",
+            "message": "No arbitrary colour values. Use a semantic token: bg-primary, text-muted-foreground, border-input."
+          },
+          {
+            "selector": "Literal[value=/\\b(?:bg|text|border|ring|fill|stroke|shadow|from|via|to|divide|outline|decoration|accent|caret|placeholder)-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-\\d{2,3}\\b/]",
+            "message": "No raw palette utilities (bg-blue-500). Use a semantic token, or add one to src/theme/theme.css."
+          },
+          {
+            "selector": "TemplateElement[value.raw=/\\b(?:bg|text|border|ring|fill|stroke|shadow|from|via|to|divide|outline|decoration|accent|caret|placeholder)-(?:slate|gray|zinc|neutral|stone|red|orange|amber|yellow|lime|green|emerald|teal|cyan|sky|blue|indigo|violet|purple|fuchsia|pink|rose)-\\d{2,3}\\b/]",
+            "message": "No raw palette utilities (bg-blue-500). Use a semantic token, or add one to src/theme/theme.css."
+          },
+          {
+            "selector": "Literal[value=/(?:#[0-9a-fA-F]{3,8}\\b|\\b(?:rgb|rgba|hsl|hsla|oklch|oklab|color-mix)\\()/]",
+            "message": "No literal colours. Colour lives in src/theme/theme.css as an oklch custom property."
+          },
+          {
+            "selector": "TemplateElement[value.raw=/(?:#[0-9a-fA-F]{3,8}\\b|\\b(?:rgb|rgba|hsl|hsla|oklch|oklab|color-mix)\\()/]",
+            "message": "No literal colours. Colour lives in src/theme/theme.css as an oklch custom property."
+          },
+          {
+            "selector": "Literal[value=/\\b(?:bg|text|border|ring|fill|stroke|shadow|from|via|to|divide|outline|decoration|accent|caret|placeholder)-(?:white|black)\\b/]",
+            "message": "No bg-white / text-black. Use bg-background, text-foreground, or bg-foreground for a scrim."
+          },
+          {
+            "selector": "TemplateElement[value.raw=/\\b(?:bg|text|border|ring|fill|stroke|shadow|from|via|to|divide|outline|decoration|accent|caret|placeholder)-(?:white|black)\\b/]",
+            "message": "No bg-white / text-black. Use bg-background, text-foreground, or bg-foreground for a scrim."
+          },
+          {
+            "selector": "ImportExpression",
+            "message": "No dynamic import() in presentation. Lazy loading and code-splitting are Dev's, in /app — import statically, and never another flow's screen."
+          },
+          {
+            "selector": "JSXAttribute[name.name=\"style\"]",
+            "message": "No style prop. Use className with Tailwind utilities — that is the whole reason there is no *.styles.ts file in this pack."
+          }
+        ]
+      }
+    }
+  ]
+}
