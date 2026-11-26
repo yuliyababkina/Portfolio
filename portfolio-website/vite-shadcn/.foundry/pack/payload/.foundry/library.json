@@ -1,0 +1,65 @@
+{
+  "library": "shadcn",
+  "storyIds": [
+    "system-flow-map--all-flows",
+    "system-theme-showcase--light",
+    "system-theme-showcase--dark"
+  ],
+  "custom": {
+    "packages": [],
+    "modules": [
+      "src/components/ui/",
+      "src/shared/ui/typography.tsx"
+    ]
+  },
+  "views": {
+    "modal": {
+      "components": [
+        {
+          "from": "src/components/ui/dialog.tsx",
+          "name": "Dialog"
+        },
+        {
+          "from": "src/components/ui/alert-dialog.tsx",
+          "name": "AlertDialog"
+        }
+      ]
+    },
+    "drawer": {
+      "components": [
+        {
+          "from": "src/components/ui/sheet.tsx",
+          "name": "Sheet"
+        },
+        {
+          "from": "src/components/ui/drawer.tsx",
+          "name": "Drawer"
+        }
+      ]
+    },
+    "wizard": {
+      "components": [
+        {
+          "from": "src/components/ui/questionnaire.tsx",
+          "name": "Questionnaire",
+          "steps": {
+            "element": [
+              {
+                "from": "src/components/ui/questionnaire.tsx",
+                "name": "QuestionnaireItem"
+              }
+            ],
+            "label": {
+              "child": {
+                "from": "src/components/ui/questionnaire.tsx",
+                "name": "QuestionnaireTitle"
+              },
+              "prop": "name"
+            }
+          }
+        }
+      ],
+      "note": "Questionnaire counts as a wizard because the user moves through its items with next/back: @shadcn/react 0.3.1 renders only the active item (the others are hidden and inert) and QuestionnaireNext/QuestionnairePrevious move between them. C25 checks this in the browser. Decision K7, 2026-11-04."
+    }
+  }
+}
